@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт ФСБ России</title>
+    <link rel="stylesheet" href="style.css">
+    <script lang="javascript" src="super.js"></script>
+</head>
+
+<body>
+    <section>
+        <div class="articleTitle">
+            <h1 class="introduction">ФСБ России. Мы следим за вами. Представьтесь ниже</h1>
+            <h1 id="helloUser" class="">ПРИВЕТ! Представишься?</h1>
+            <button onclick="printUserName(getUserName());">Представиться</button>
+            <button onclick="reset();">Сбежать</button>
+        </div>
+
+        <div class="articleText bordered" style="display: none;" id="hidden1">
+            <p>У тебя <b>много</b> <span style="color: red;">ВАЖНЫХ</span> дел! Ты всё сделал?:</p>
+            <ol id="business" style="display: inline-block; list-style-type: square;">
+                <li class="todo">заплатить налоги</li>
+                <li class="todo">оплатить коммуналку</li>
+                <li class="todo">пожертваовать на СВО</li>
+                <li class="todo">позвонить родителям</li>
+                <li class="todo">посадить дерево</li>
+            </ol>
+            <p id="result"></p>
+            <button onclick="allDone();">Всё сделано</button>
+            <button onclick="allUndone();">Не всё сделано</button>
+        </div>
+
+        <div class="articleText">
+            <button onclick="askAge();"> Укажи возаст</button>
+        </div>
+    </section>
+</body>
+
+</html>

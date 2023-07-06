@@ -1,0 +1,84 @@
+body {
+    background-color:rgb(255, 2, 2);
+    width: 800px;
+    font-family: Arial, Helvetica, sans-serif;  
+    margin: auto;  
+}
+
+h1, h2{
+    padding: 0 0;
+    margin: 5px 0;
+}
+.helloUser{
+    color:rgb(6, 78, 22)
+}
+.introduction{
+    color: rgb(246, 244, 242);
+}
+DIV.articleTitle{
+    background-color:rgb(12, 12, 12);
+    width: 800px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+DIV.articleText{
+    background-color:rgb(244, 241, 240);
+    width: 800px;  
+    padding: 20px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;    
+}
+
+img{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    text-align: justify;
+}
+
+.redAlert{
+    color: crimson;
+    font-weight: bold;    
+}
+
+button{
+    width: 150px;
+    height: 25px;
+    background-color:rgb(160, 207, 255);
+    font-weight: bold;
+}
+
+button:hover{
+    background-color:aqua;
+}
+
+button:active{
+    border-width: 3px;
+    color: aqua;
+    background-color: darkblue;
+}
+
+.todo{
+    color:darkgreen;
+    font-weight: normal;
+}
+
+.todoDone{
+    text-decoration:line-through;
+    color: gray;
+    font-weight: normal;
+}
+
+LI.todo:hover{
+    font-weight: bold;
+    color: darkred;
+    border: 1px solid red;
+}
