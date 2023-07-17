@@ -1,0 +1,35 @@
+-- https://onecompiler.com/mysql/3ze2nc5du
+-- create
+CREATE TABLE user (
+  id INTEGER PRIMARY KEY,
+  name TEXT  NOT NULL,
+  age INTEGER NOT NULL,
+  city TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO user VALUES (1 ,'Екатерина Потапова', 32, 'Омск');
+INSERT INTO user VALUES (2 ,'Илья Асанов', 21, 'Санкт-Петербург');
+INSERT INTO user VALUES (3 ,'Владимир Рыбалкин', 24, 'Москва');
+INSERT INTO user VALUES (4 ,'Alice Atlasova', 41, 'Краснодар');
+INSERT INTO user VALUES (5 ,'Тамерлан Моллаев', 25, 'Москва');
+INSERT INTO user VALUES (6 ,'Сергей Костив', 34, 'Владивосток');
+INSERT INTO user VALUES (7 ,'Ульяна Сухенко', 19, 'Москва');
+INSERT INTO user VALUES (8 ,'Вячеслав Хлуднев', 29, 'Белгород');
+INSERT INTO user VALUES (9 ,'Алексей Минченя', 38, 'Владивосток');
+INSERT INTO user VALUES (10 ,'Николай Лубский', 40, 'Омск');
+INSERT INTO user VALUES (11 ,'Сергеев Василий', 39, 'Нижний Новгород');
+INSERT INTO user VALUES (12 ,'Владимир Гребенников', 26, 'Мурманск');
+INSERT INTO user VALUES (13 ,'Наталья Авраменко', 29, 'Москва');
+
+
+-- fetch 
+SELECT * FROM user;
+
+DELETE FROM user WHERE age = 40;
+
+SELECT * FROM user;
+
+SELECT * FROM user WHERE age > 34;
+
+SELECT name, age FROM user WHERE city = "Москва"  ORDER BY age;
